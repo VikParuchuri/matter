@@ -1,0 +1,49 @@
+{
+    "extName":  {
+        "message": "WebNavigation Tech Demo",
+        "description": "The extension name."
+    },
+    "extDescription": {
+        "message": "Demonstration of the WebNavigation extension API.",
+        "description": "The extension description."
+    },
+    "navigationDescription": {
+        "message": "<li class='list-group-item'><a href='$URL$' target='_blank'>$URL_SHORT$</a> loaded at $TIME$</li>",
+        "description": "The message posted in the popup for each stored navigation.",
+        "placeholders": {
+            "URL": {
+                "content": "$1",
+                "example": "URL of the page."
+            },
+            "URL_SHORT": {
+                "content": "$2",
+                "example": "URL of the page."
+            },
+            "TIME": {
+                "content": "$3",
+                "example": "12.345 (Time when page was accessed.)"
+            }
+        }
+    },
+    "inHandler": {
+        "message": "In webNavigation[`%s`] handler: %o",
+        "description": "Notification displayed for each webNavigation event."
+    },
+
+    "inHandlerError": {
+        "message": "In webNavigation[`%s`] handler: No data!",
+        "description": "Notification displayed in a webNavigation event handler without data!"
+    },
+    "errorCompletedWithoutPending": {
+        "message": "Wha?  `onCompleted` for `%s` called, though it's not pending: %o",
+        "description": "Error logged when `onCompleted` is triggered on a non-pending request."
+    },
+    "errorErrorOccurredWithoutPending": {
+        "message": "Wha?  `onErrorOccurred` for `%s` called, though it's not pending: %o",
+        "description": "Error logged when `onErrorOccurred` is triggered on a non-pending request."
+    },
+    "errorCommittedWithoutPending": {
+        "message": "Wha?  `onCompleted` for `%s` called, though it's not pending: %o",
+        "description": "Error logged when `onCompleted` is triggered on a non-pending request."
+    }
+}
